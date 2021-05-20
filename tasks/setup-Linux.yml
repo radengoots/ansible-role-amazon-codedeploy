@@ -25,5 +25,5 @@
 - name: Linux | CodeDeploy service
   service:
     name: codedeploy-agent
-    state: started
+    state: stopped
     enabled: yes
