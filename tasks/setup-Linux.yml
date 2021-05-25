@@ -25,5 +25,5 @@
 - name: Linux | CodeDeploy service
   service:
     name: codedeploy-agent
-    state: started
+    state: "{{ codedeploy_service_state }}"
     enabled: yes
