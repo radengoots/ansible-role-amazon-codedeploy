@@ -57,6 +57,9 @@ codedeploy_install_script_url: "{{ default_codedeploy_install_script_url }}"
 
 # Where to store codedeploy agent install script
 codedeploy_install_script_dest: "{{ default_codedeploy_install_script_dest }}"
+
+# CodeDeploy agent service state after instalation
+codedeploy_service_state: started
 ```
 
 ## Dependencies
@@ -85,6 +88,7 @@ Change aws region where to download CodeDeploy install script
     - role: diodonfrost.amazon_codedeploy
       vars:
         aws_region: eu-west-3
+        codedeploy_service_state: stopped
 ```
 
 ## Local Testing

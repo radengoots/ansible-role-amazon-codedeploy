@@ -15,4 +15,4 @@
   win_service:
     name: codedeployagent
     start_mode: auto
-    state: started
+    state: "{{ codedeploy_service_state }}"

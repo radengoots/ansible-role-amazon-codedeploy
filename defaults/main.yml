@@ -9,3 +9,6 @@ codedeploy_install_script_url: "{{ default_codedeploy_install_script_url }}"
 
 # Where to store codedeploy agent install script
 codedeploy_install_script_dest: "{{ default_codedeploy_install_script_dest }}"
+
+# CodeDeploy agent service state after instalation
+codedeploy_service_state: started
